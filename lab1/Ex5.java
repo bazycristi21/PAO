@@ -1,22 +1,18 @@
 import java.util.Scanner;
-public class P6 {
-    public static void main(String[] argv) {
+public class Exemplul5 {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int x = input.nextInt();
-        int fib1= 1, fib2= 1;
-        int aux = 2;
-        if (x == 1 || x == 2) {
-            System.out.println("1");
+        int a = input.nextInt();
+        
+        int numberOfDiv = 0;
+        
+        for(int i = 1; i <= a; i++) {
+            if(a % i == 0)
+                numberOfDiv++;
         }
-        else {
-            x = x - 2;
-            while (x > 0) {
-                aux = fib1 + fib2;
-                fib1 = fib2;
-                fib2 = aux;
-                x--;
-            }
-            System.out.println(aux);
-        }
+        if(numberOfDiv == 2)
+            System.out.println("Numarul este prim");
+        else 
+            System.out.println("Numarul nu este prim");
     }
 }
