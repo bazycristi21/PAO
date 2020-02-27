@@ -19,7 +19,6 @@ public class Ex7{
              }
              if(ok == 1)
              {
-                 System.out.print("daa");
                  maxim = i;
              }
                 
