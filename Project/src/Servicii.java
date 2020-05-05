@@ -41,7 +41,7 @@ class Servicii {
         System.out.println(" masini in flota.");
         for(Masina m:Flota)
         {
-            m.afisareMasina();
+            m.afiseaza();
         }
     }
     public void afisareRute()
@@ -65,6 +65,10 @@ class Servicii {
     {
         Rute.add(new Ruta(orase));
         System.out.println("Noua ruta a fost adaugata");
+    }
+    public <T> void afisare(T a)
+    {
+        //
     }
     public String esteRuta(String Oras1, String Oras2)
     {

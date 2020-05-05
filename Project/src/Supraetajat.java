@@ -9,8 +9,8 @@ class Supraetajat extends Sprinter {
         this.nrLocuriEtaj = nrLocuriEtaj;
     }
 
-    public Supraetajat(int nrLocuri, int locBagaje,int nrLocuriEtaj) {
-        super(nrLocuri,locBagaje);
+    public Supraetajat(String nume, int nrLocuri, int locBagaje,int nrLocuriEtaj) {
+        super(nume,nrLocuri,locBagaje);
         this.nrLocuriEtaj = nrLocuriEtaj;
         this.nume = "Supraetajat";
     }

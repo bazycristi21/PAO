@@ -9,13 +9,19 @@ class Masina {
     public void setNrLocuri(int nrLocuri) {
         this.nrLocuri = nrLocuri;
     }
-    public void afisareMasina()
+
+    public String getNume() {
+        return nume;
+    }
+
+    public void afiseaza()
     {
         System.out.print(this.nume);
         System.out.print(" - ");
         System.out.println(this.nrLocuri);
     }
-    public Masina(int nrLocuri) {
+    public Masina(String nume,int nrLocuri) {
+        this.nume = nume;
         this.nrLocuri = nrLocuri;
     }
 }

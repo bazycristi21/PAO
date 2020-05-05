@@ -1,5 +1,5 @@
 class Microbuz extends Masina {
-    int reducere = 0;
+    int reducere = 10;
     // se aplica reducere deoarece nu exista loc de bagaje
     public int getReducere() {
         return reducere;
@@ -9,8 +9,8 @@ class Microbuz extends Masina {
         this.reducere = reducere;
     }
 
-    public Microbuz(int nrLocuri, int reducere) {
-        super(nrLocuri);
+    public Microbuz(String nume,int nrLocuri, int reducere) {
+        super(nume,nrLocuri);
         this.reducere = reducere;
         this.nume = "Microbuz";
     }

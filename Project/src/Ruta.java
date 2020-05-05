@@ -12,7 +12,13 @@ public class Ruta {
     public ArrayList<Oras>  getOrase() {
         return orase;
     }
-
+    public void afiseaza()
+    {
+        for(int i = 0; i < this.orase.size();i++)
+        {
+            System.out.print(this.orase.get(i).nume + " ");
+        }
+    }
     public void setOrase(ArrayList<Oras> orase) {
         this.orase = orase;
     }

@@ -9,8 +9,8 @@ class Sprinter extends Masina{
         this.locBagaje = locBagaje;
     }
 
-    public Sprinter(int nrLocuri, int locBagaje) {
-        super(nrLocuri);
+    public Sprinter(String nume, int nrLocuri, int locBagaje) {
+        super(nume,nrLocuri);
         this.locBagaje = locBagaje;
         this.nume = "Sprinter";
     }
