@@ -18,5 +18,15 @@ public class Main {
         S.afisareRute();
         Masina m = new Masina("Microbuz",0);
         S.afisare(m);
+
+        jdbc jdbc = new jdbc();
+        jdbc.setRuta();
+        Oras o1 = new Oras("Alexandria");
+        Oras o2 = new Oras("Bucuresti");
+        ArrayList<Oras> orase1 = new ArrayList<>();
+        orase1.add(o1);
+        orase1.add(o2);
+        Ruta r1 = new Ruta(orase1);
+        jdbc.deleteRuta(r1);
     }
 }

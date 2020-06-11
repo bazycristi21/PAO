@@ -32,6 +32,18 @@ class Bilet {
         this.timp = Math.round(60  * this.distanta / 80); // calculat pt viteza medie de 80km / h
         this.reducere = reducere;
     }
+    public Bilet(String plecare, String destinatie, int distanta)
+    {
+        Oras oplecare = new Oras(plecare);
+        Oras odestinatie = new Oras(destinatie);
+        this.plecare = oplecare;
+        this.destinatie = odestinatie;
+        this.distanta = distanta;
+        this.pret = Math.round(this.distanta / 3);
+        this.pret = pret -  reducere / 100  * pret;
+        this.timp = timp;
+        this.reducere = 0;
+    }
     public Bilet(Oras plecare, Oras destinatie,int distanta, float pret , int timp ,float reducere) {
         this.plecare = plecare;
         this.destinatie = destinatie;
